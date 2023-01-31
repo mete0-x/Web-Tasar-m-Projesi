@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+html{
+    font-family: "Open Sans",sans-serif;
+}
+#navbar{
+color: #fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 0.75rem;
+height: 100px;
+
+}
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    
+}
+#navbar ul li a{
+    padding: 15px;
+}
+#navbar ul li a{
+    background-color: rgb(240, 230, 230);
+    border-radius: 4px;
+    text-align:center ;
+    }
+#tablo-1{
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 20%;
+    margin-right: auto;
+    display: inline;
+    margin-top: 30px;
+}
+#tablo-1 td,#tablo-1 th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#tablo-1 tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+/* #tablo-1 tr:hover{
+    background-color: rgb(103, 87, 87);
+} */
+#tablo-1 th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(231, 226, 226);
+
+    color: black;
+}
+ ul .a{
+    list-style-type: circle;
+}
+li{
+    margin: 0px 0px 0px 17px;
+    padding: 3px 0px;
+}
+
+#tablo-2,#tablo-3,#tablo-4{
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 10%;
+    display: inline-block;
+    text-align: center;
+}
+#tablo-2 td,#tablo-2 th,#tablo-3 td,#tablo-3 th,#tablo-4 td,#tablo-4 th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#tablo-2 tr:nth-child(even),#tablo-3 tr:nth-child(even),#tablo-4 tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+#tablo-2 tr:hover,#tablo-3 tr:hover,#tablo-4 tr:hover{
+    background-color: #ddd;
+}
+#tablo-2 th,#tablo-3 th,#tablo-4 th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(231, 226, 226);
+
+    color: black;
+}
+.liste{
+    margin: 15px 20px 15px 20px;
+}
+.yazı{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px 50px 5px 50px;
+
+}
+img{
+    margin: 30px;
+}
+/* #navbar ul li a:hover{
+    color: red;
+
+} */

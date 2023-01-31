@@ -1,0 +1,46 @@
+
+#form{
+    border: 1px solid #ddd;
+    padding: 10px;
+    
+}
+input{
+   
+    border-width: thick;
+    margin-left: 50px;
+    margin-top: 15px;
+    border-radius: 2px;
+    width: 200.400px;
+    height: 30px;
+}
+input.button_1,input.button_2{
+    width: auto;
+    height: auto;
+}
+.yazı{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px 50px 5px 50px;
+
+}
+.resim{
+    text-align: center;
+}
+.yazı li {
+    margin-left: 75px;
+}
+table{
+    background-color: white;
+    text-align: center;
+}
+.Bkeh{
+    background-color: rgb(240, 230, 230);;
+    text-align: center;
+}
+.sonuc{
+    display: inline;
+    background-color: black;
+    color: #ddd;
+
+}

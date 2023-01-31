@@ -1,0 +1,45 @@
+form{
+    background-color: rgb(231, 226, 226);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    margin: 10px 50px 0px 50px;
+    width: 600px;
+    height: 400px;
+    text-align: center;
+
+}
+h2{
+    margin-left: 20px;
+}
+
+input{
+    background-color: azure;
+    border-width: thick;
+    margin-left: 1px;
+    margin-top: 15px;
+    border-radius: 4px;
+    width: 200.400px;
+    height: 30px;
+}
+.abc input{
+    background-color:  rgb(231, 226, 226);;
+    border-width: 10;
+    border-style: outset;
+    margin-left: 1px;
+    margin-bottom: 10px;
+    width: auto;
+    height: auto;
+}
+.abcd a {
+    color: black;
+    margin-left: 1px;
+    padding-bottom: 50px;
+}
+.giriş{
+    display: inline-block;
+}
+#form2{
+    float: right;
+}

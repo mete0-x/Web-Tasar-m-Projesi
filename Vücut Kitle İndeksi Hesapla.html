@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vücut Kitle İndeksi Hesaplama</title>
+    <meta name="keyword" content="Fitness-Program ,Vücut Kitle İndeksi VE Kalori Hesaplama"/>
+    <meta name="description" content="Fitness-Program Vücut Kitle İndeksi ve Kalori Hesaplama"/>
+
+    <link rel="stylesheet" href="./CSS/Vücut Kitle İndeksi Hesapla.css">
+    <link rel="stylesheet" href="./CSS/global.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+             <nav id="navbar">
+                <div class="logo">
+                  <a href="#"><img src="./images/FA-Logo.png" alt="logo"></a>
+                </div>
+              
+              <ul>
+                <li><a href="proje.html">Ana Sayfa</a> </li>
+                <li><a href="FitnessPrograms.html">Fitness programlar</a></li>
+                <li><a href="Vücut Kitle İndeksi Hesapla.html">Vücut Kitle İndeksi Hesapla </a> </li>
+                <li><a href="hesap..html">Hesabım</a></li>    
+            </ul>
+             </nav>
+            </div>
+           </header>
+           <br>
+           <br>
+           <div class="başlık">
+             <h1 style="text-align: center;" >Vücut Kitle Endeksi Hesaplama</h1>
+             
+             <p class="yazı">Aşağıdaki hesaplama aracında beden kitle endeksini öğrenmek istediğiniz kişinin cinsiyetini seçtikten sonra santim cinsinden boyu ile kilogram cinsinden ağırlığını giriniz ve hesapla butonuna basınız.</p>
+                 
+              <div class="form_1">
+                <html>
+         <div class="Bkeh">
+    <h2>Bedene Kitle Endeksi Hesaplama</h2>
+    <form>
+      <table style="margin-left: 575px;">
+        <tr>
+      <td> Boyunuz (m):</td>
+      <td> <input type="number" id="boy"></td>
+        </tr>
+        <tr>
+    <td>  Kilonuz (kg):</td>
+    <td> <input type="number" id="kilo"></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> <input type="button" value="Hesapla" onclick="hesaplaBKE()"></td>
+    </tr>
+    </table>
+    </form>
+    <p class="sonuc">Sonuç: <span id="sonuc"></span></p>
+  </div>
+     <script>
+     
+        function hesaplaBKE() {
+  var boy = document.getElementById("boy").value;
+  var kilo = document.getElementById("kilo").value;
+
+  var b = Number(boy);
+  var k = Number(kilo);
+
+  var bke = k / (b * b);
+
+
+  // if (boy == "" || kilo == "") {
+  // alert("Lütfen tüm girdileri doldurun.");
+  // return;
+
+  if (bke < 18.5) {
+    document.getElementById("sonuc").innerHTML = "Zayıf";
+    alert("zayıf " +bke);
+  }
+   else if (bke >= 18.5 && bke < 25) 
+    document.getElementById("sonuc").innerHTML = "Normal";
+   else if (bke >= 25 && bke < 30) 
+    document.getElementById("sonuc").innerHTML = "Fazla kilolu";
+   else if (bke >= 30 && bke < 35) 
+    document.getElementById("sonuc").innerHTML = "Şişman (obez) - I. sınıf";
+   else if (bke >= 35 && bke < 45) 
+    document.getElementById("sonuc").innerHTML = "Şişman (obez) - II. sınıf";
+   else 
+    document.getElementById("sonuc").innerHTML = "Aşırı Şişman (aşırı obez) - III. sınıf";
+
+
+}      
+    </script>
+
+
+                
+
+              </div>
+              <div class="yazı">
+                <br>
+                 <h2>Vücut Kitle Endeksi nedir?</h2>
+                 <br>
+                 <p>Yetişkin bir insanın ağırlığının, boyuna göre normal olup olmadığını gösteren bir parametredir. İngilizcede "Body Mass Index" veya kısa adıyla "BMI" şeklinde ifade edilmektedir. Aşağıda görülen Vücut Kitle Endeksi (VKE, VKİ veya BKİ) tablosunda kilogram cinsinden ağırlık ve metre cinsinden boyun kesiştiği noktanın içinde bulunan alan ile kilonun ideal olup olmadığı tespit edilebilmektedir. Eğer mevcut ağırlığınız idealin altında ya da üstünde ise ideal noktaya ulaşabilmek için izlenecek yol, kısa sürede fazla miktarda kilo kaybetmek ya da almak değil, adım adım sağlıklı kiloya ulaşmak ve bu düzeyi uzun dönemde korumaktır.</p>
+                 <br>
+                 <br>
+                 <div class="resim">
+                 <img src="./images/vki.gif" alt="Vücut Kitle Endeksi">
+                </div>
+                <br>
+                <h2> Vücut kitle indeksi nasıl hesaplanır? </h2>
+                <br>
+                <p>Vücut ağırlığının boy uzunluğunun karesine bölünmesi ile hesaplanır. Sonuç olarak elde edilen değer yani beden kitle indeksi aşağıdaki aralıklarda değerlendirilmektedir.</p>
+                <ul>
+                  <br>
+                  <li>0 - 18,4: Zayıf</li>
+                  <br>
+                </ul>
+                
+                <p>Uzunluğunuza göre uygun ağırlıkta olmadığınızı, zayıf olduğunuzu gösterir. Zayıflık, bazı hastalıklar için risk oluşturan ve istenmeyen bir durumdur. Boyunuza uygun ağırlığa erişmeniz için yeterli ve dengeli beslenmeli, beslenme alışkanlıklarınızı geliştirmeye özen göstermelisiniz. </p>
+                <br>
+                <ul>
+                  <br>
+                  <li>18,5 - 24,9: Normal</li>
+                  <br>
+                </ul>
+                <p>Uzunluğunuza göre uygun ağırlıkta olduğunuzu gösterir. Yeterli ve dengeli beslenerek ve düzenli fiziksel aktivite yaparak bu ağırlığınızı korumaya özen gösteriniz. </p>
+               <br>
+                <ul>
+                  <li>25,0 - 29,9: Fazla Kilolu</li>
+                  <br>
+                </ul>
+                <p>Boyunuza göre vücut ağırlığınızın fazla olduğunu gösterir. Fazla kilolu olma durumu gerekli önlemler alınmadığı takdirde pek çok hastalık için risk faktörü olan obeziteye (şişmanlık) yol açar.</p>
+               <br>
+                <ul>
+                <li>30,0 - 34,9: Şişman (Obez) - I. Sınıf</li>
+                <br>
+               </ul>
+               <p>Boyunuza göre vücut ağırlığınızın fazla olduğunu bir başka deyişle şişman olduğunuzun bir göstergesidir. Şişmanlık, kalp-damar hastalıkları, diyabet, hipertansiyon v.b. kronik hastalıklar için risk faktörüdür. Bir sağlık kuruluşuna başvurarak hekim / diyetisyen kontrolünde zayıflayarak normal ağırlığa inmeniz sağlığınız açısından çok önemlidir. Lütfen, sağlık kuruluşuna başvurunuz.  </p>
+               <br>
+               <ul>
+                <li>35,0 - 44,9: Şişman (Obez) - II. Sınıf</li>
+                <br>
+               </ul>
+               <p>Uzunluğunuza göre vücut ağırlığınızın fazla olduğunu bir başka deyişle şişman olduğunuzun bir göstergesidir. Şişmanlık, kalp-damar hastalıkları, diyabet, hipertansiyon v.b. kronik hastalıklar için risk faktörüdür. Bir sağlık kuruluşuna başvurarak hekim / diyetisyen kontrolünde zayıflayarak normal ağırlığa inmeniz sağlığınız açısından çok önemlidir. Lütfen, sağlık kuruluşuna başvurunuz.  </p>
+               <br>
+               <ul>
+                   <li>45,0 ve üstü: Aşırı Şişman (Aşırı Obez) - III. Sınıf </li>
+                   <br>
+                </ul>
+                <p>Boyunuza göre vücut ağırlığınızın fazla olduğunu bir başka deyişle şişman olduğunuzun bir göstergesidir. Şişmanlık, kalp-damar hastalıkları, diyabet, hipertansiyon v.b. kronik hastalıklar için risk faktörüdür. Bir sağlık kuruluşuna başvurarak hekim / diyetisyen kontrolünde zayıflayarak normal ağırlığa inmeniz sağlığınız açısından çok önemlidir. Lütfen, sağlık kuruluşuna başvurunuz.  </p>
+                 <br>
+ 
+ 
+              </div>
+          
+            </div>
+    
+</body>
+</html>
